@@ -1,0 +1,3 @@
+[submodule "etna-lib"]
+	path = etna-lib
+	url = git@github.com:alpaylan/etna-haskell-lib.git

@@ -1,0 +1,8 @@
+.stack-work/
+dist-newstyle/
+bin/
+*.hi
+*.o
+*~
+.DS_Store
+etna.log

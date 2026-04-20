@@ -1,0 +1,3 @@
+name = "BST"
+language = "Haskell"
+description = "Binary search tree workload for Etna, with QuickCheck/SmallCheck/LeanCheck generators."

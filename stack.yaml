@@ -1,11 +1,14 @@
-resolver: lts-19.6
-compiler: ghc-9.0.2
+resolver: lts-24.37
+compiler: ghc-9.10.3
 allow-newer: true
 system-ghc: true
 
 packages:
     - .
     - ./etna-lib
+
+extra-deps:
+    - falsify-0.3.0@sha256:75ff775bd5c7e673bd09ba6c8543bc6e6769f2ee4827120b08c80480ece09800,5418
 
 extra-include-dirs:
     - /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/ffi

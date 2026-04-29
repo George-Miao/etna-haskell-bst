@@ -7,6 +7,7 @@ import Data.List (lookup)
 import Data.Maybe
 import Strategy.Correct as Correct
 import Strategy.Falsify as Falsify
+import Strategy.FalsifyBuiltin as FalsifyBuiltin
 import Strategy.Hedgehog as Hedgehog
 import Strategy.Lean as Lean
 import Strategy.LeanRev as LeanRev
@@ -20,6 +21,7 @@ $( mkMain
      ( return
          [ "Correct",
            "Falsify",
+           "FalsifyBuiltin",
            "Hedgehog",
            "Lean",
            "LeanRev",

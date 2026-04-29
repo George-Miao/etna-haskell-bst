@@ -14,6 +14,7 @@ library
       Spec
       Strategy.Correct
       Strategy.Falsify
+      Strategy.FalsifyBuiltin
       Strategy.Hedgehog
       Strategy.Lean
       Strategy.LeanRev

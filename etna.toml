@@ -1,6 +1,17 @@
 name = "bst-haskell"
 language = "Haskell"
 description = "Binary search tree workload for Etna, with QuickCheck/SmallCheck/LeanCheck generators."
+strategies = [
+  "Quick",
+  "Hedgehog",
+  "Falsify",
+  "Small",
+  "SmallRev",
+  "Lean",
+  "LeanRev",
+  "Size",
+  "Correct",
+]
 
 mutations = [
   "insert_1",

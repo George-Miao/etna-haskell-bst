@@ -17,7 +17,7 @@ jobs:
     uses: alpaylan/etna-cli/.github/workflows/run-and-publish.yml@fix-canary-rollout
     with:
       trials: 10
-      timeout: 60
+      timeout: 10
     secrets:
       CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
       CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}

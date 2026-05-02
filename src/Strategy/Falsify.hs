@@ -6,8 +6,8 @@ module Strategy.Falsify where
 import Etna.Lib
 import Impl
 import Spec
-import qualified Test.Falsify.Generator as Gen
 import Test.Falsify.Generator (Gen)
+import qualified Test.Falsify.Generator as Gen
 import qualified Test.Falsify.Range as Range
 
 class FGen a where
@@ -28,8 +28,9 @@ instance FGen BST where
       genBST height
         | height <= 0 = pure E
         | otherwise = do
-            left <- Gen.int (Range.between (0, height - 1))
-            right <- Gen.int (Range.between (0, height - 1))
+            let shrunkHeight = (height * 618) `div` 1000
+            left <- Gen.int (Range.between (0, shrunkHeight))
+            right <- Gen.int (Range.between (0, shrunkHeight))
             Gen.frequency
               [ (1, pure E),
                 (3, T <$> genBST left <*> fgen <*> fgen <*> genBST right)
